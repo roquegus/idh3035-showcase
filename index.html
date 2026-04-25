@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IDH 3035 Final Showcase – Spring 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  :root {
+    --ink: #0e1a2b;
+    --ink-soft: #3a4759;
+    --muted: #6b7a90;
+    --line: #e3e8f0;
+    --bg: #f7f8fb;
+    --accent: #1f4e78;
+    --accent-soft: #e8f0f9;
+    --gold: #b8860b;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    background: linear-gradient(135deg, #1f4e78 0%, #2e75b6 100%);
+    color: white;
+    padding: 64px 24px 56px;
+    text-align: center;
+  }
+  header .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 13px;
+    opacity: 0.85;
+    margin-bottom: 12px;
+    color: #ffd966;
+  }
+  header h1 {
+    margin: 0 0 14px;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  header p {
+    margin: 0 auto;
+    max-width: 720px;
+    font-size: 17px;
+    opacity: 0.92;
+  }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  .intro {
+    max-width: 760px;
+    margin: 0 auto 48px;
+    color: var(--ink-soft);
+    font-size: 16px;
+  }
+  .intro strong { color: var(--ink); }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+  }
+  .card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px -10px rgba(31, 78, 120, 0.25);
+  }
+  .video-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+  }
+  .video-wrap iframe,
+  .video-wrap .placeholder {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f2f6;
+    color: var(--muted);
+    font-style: italic;
+    text-align: center;
+    padding: 16px;
+  }
+  .card-body {
+    padding: 22px 24px 26px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .team-tag {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+    align-self: flex-start;
+  }
+  .card h2 {
+    margin: 0 0 6px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .persona {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0 0 12px;
+    font-weight: 500;
+  }
+  .pitch {
+    margin: 0;
+    font-size: 15px;
+    color: var(--ink-soft);
+  }
+  footer {
+    text-align: center;
+    padding: 36px 24px 48px;
+    color: var(--muted);
+    font-size: 14px;
+    border-top: 1px solid var(--line);
+    background: white;
+  }
+  footer .course { color: var(--ink); font-weight: 600; }
+  @media (max-width: 600px) {
+    header { padding: 44px 20px 40px; }
+    main { padding: 40px 20px 60px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">FIU Honors College · Spring 2026</div>
+  <h1>IDH 3035 — Final Project Showcase</h1>
+  <p>Honors Seminar VI: Design Thinking. Eight student teams spent the semester applying human-centered design to the Honors College student experience. These are their final solutions.</p>
+</header>
+
+<main>
+  <p class="intro">
+    Each team identified a real challenge facing Honors students — housing, community, study spaces, balancing work and school, the freshman transition — built empathy maps and personas around their user, and prototyped a solution. <strong>Click any video to watch their final pitch.</strong>
+  </p>
+
+  <div class="grid">
+
+    <article class="card">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/QwoqNdzvd2c" title="Team Rams" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="team-tag">Team Rams</span>
+        <h2>Reimagining Honors Housing</h2>
+        <p class="persona">Persona: FIU Honors Housing students</p>
+        <p class="pitch">Tackling roommate matching, privacy, cost, and community in on-campus housing.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/t2org72u5K4" title="Team Lions" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="team-tag">Team Lions</span>
+        <h2>The Honors Student Experience</h2>
+        <p class="persona">Persona: FIU Honors student</p>
+        <p class="pitch">Empathy work, stakeholder mapping, and a design solution for the Honors student journey.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/Dt40BVPYo7I" title="Team Mustangs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="team-tag">Team Mustangs</span>
+        <h2>Building Community in Honors</h2>
+        <p class="persona">Persona: Sofia Martinez — Honors student</p>
+        <p class="pitch">Designing for study space, friendship, and the everyday value of the Honors experience.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/CrXL5RJzv0o" title="Team Koalas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="team-tag">Team Koalas</span>
+        <h2>Helping Commuter Students Graduate on Time</h2>
+        <p class="persona">Persona: Alex — commuter undergraduate</p>
+        <p class="pitch">Cutting through confusing online systems for students juggling school, work, and life off campus.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/HMHpWFhakrk" title="Team Giraffes" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="team-tag">Team Giraffes</span>
+        <h2>The Working Student's Study Problem</h2>
+        <p class="persona">Persona: Alex Gonzalez — working college student</p>
+        <p class="pitch">Designing for the student trying to study late at night after a full shift — and making it stick.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/8CZwd-1W5oc" title="Team Elephants" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="team-tag">Team Elephants</span>
+        <h2>Driven, but Burnt Out</h2>
+        <p class="persona">Persona: Leticia Kato — Parkview Honors resident</p>
+        <p class="pitch">Helping high-achieving Honors students stay productive without losing themselves to burnout.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/TdCZNIJ1jmk" title="Team Eagles" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="team-tag">Team Eagles</span>
+        <h2>Working Hard on the Right Things</h2>
+        <p class="persona">Persona: Alex Martinez — career-driven Honors student</p>
+        <p class="pitch">Helping ambitious students channel effort toward what actually moves the needle on their goals.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/O4by5Hcd1xA" title="Team Bears" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <span class="team-tag">Team Bears</span>
+        <h2>The First-Year Honors Experience</h2>
+        <p class="persona">Persona: John Bear — incoming Honors freshman</p>
+        <p class="pitch">Reimagining dorm life, food options, and finding your place at FIU as a first-year Honors student.</p>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <p class="course">IDH 3035 — Honors Seminar VI: Design Thinking</p>
+  <p>Florida International University Honors College · Spring 2026 · Prof. Gus Roque</p>
+</footer>
+
+</body>
+</html>
