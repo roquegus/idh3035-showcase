@@ -84,7 +84,9 @@
   .video-wrap {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio — bulletproof fallback */
+    height: 0;
+    overflow: hidden;
     background: #000;
   }
   .video-wrap iframe,
